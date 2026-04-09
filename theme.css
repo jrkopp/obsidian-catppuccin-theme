@@ -8,9 +8,13 @@ body {
 	--toggle-radius: 0px;
 	--toggle-thumb-radius: 0px;
 	--slider-thumb-radius: 0px;
+	--font-text-theme: Georgia, serif;
+	--input-hover-border-color: red;
+	--ribbon-background: magenta;
 }
 
-.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
 	display: none;
 }
 
@@ -31,4 +35,13 @@ svg * {
 
 .menu-separator {
 	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+.theme-dark {
+	--background-primary: #18004f;
+	--background-secondary: #220070;
+}
+
+.theme-light {
+	--background-primary: #ece4ff;
+	--background-secondary: #d9c9ff;
 }
